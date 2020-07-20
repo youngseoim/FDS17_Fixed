@@ -17,8 +17,13 @@ body{
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
 }
+.clearfix::after{
+  content: "";
+  display:block;
+  clear:both;
+}
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -50,7 +55,7 @@ a{
   position: relative;
 }
 /* 로고 */
-.logo{
+.logo {
   position: absolute;
   top: 26px;
   left: 60px;
@@ -132,6 +137,7 @@ a{
   list-style: none;
   white-space: nowrap;
   /* display: none; */
+  /* background-color: yellow; */
 }
 .sub-menu li,
 .sub-menu a{
@@ -161,7 +167,7 @@ a{
 }
 .sub-menu4,
 .sub-menu5,
-.sub-menu6{
+.sub-menu6{ f
   right: 0;
 }
 .sub-menu1{
@@ -229,7 +235,7 @@ a{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.4rem;
   width: 500px;
-  animation: textAni 500ms ease-in-out forwards;
+  animation: textAni 1000ms ease-in-out forwards;
 }
 /* 메인 콘텐츠 */
 .main{
@@ -243,8 +249,9 @@ a{
 }
 
 .group1{
-  background-color: pink;
   width: 250px;
+  /* background-color: pink; */
+  /* border-radius: 5px; */
 }
 .group2{
   background-color: lime;
@@ -254,6 +261,89 @@ a{
   background-color: coral;
   width: 190px;
 }
+/* 로그인 */
+.login{
+    background-color: #db5629;
+    background-image: radial-gradient(circle at right top,#ef962f, #db5629 );
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #ccc;
+    padding: 10px;
+}
+.login-heading{
+  color: #ff0;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.login-form{
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset{
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+}
+.login-form div{
+  width:  150px;
+  margin-bottom: 5px;
+}
+.login-form label{
+  display: inline-block;
+  width:55px;
+}
+.login-form input{
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  pad: 1px 1px 1px 0.5em;
+}
+.btn-login{
+  float:right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 52px;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.member-only{
+  background-color: #fff;
+  list-style: none;
+  padding:10px;
+  margin:0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.member-only li:first-child{
+  float: left;
+}
+.member-only li:last-child{
+  float: right;
+}
+.member-only a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.member-only a::before{
+  content: '\e803';
+  font-family: 'fontello';
+  display: inline-block;
+  margin-right: .2em;
+}
+/* 슬로건 */
 .slogan{
   background-color: orange;
 }
