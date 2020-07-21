@@ -167,7 +167,7 @@ a{
 }
 .sub-menu4,
 .sub-menu5,
-.sub-menu6{ f
+.sub-menu6{
   right: 0;
 }
 .sub-menu1{
@@ -268,6 +268,7 @@ a{
     border-radius: 5px;
     box-shadow: 5px 5px 0 0 #ccc;
     padding: 10px;
+    width: calc(100% - 5px);
 }
 .login-heading{
   color: #ff0;
@@ -292,7 +293,6 @@ a{
   border-bottom: 1px solid #aaa;
 }
 .login-form div{
-  width:  150px;
   margin-bottom: 5px;
 }
 .login-form label{
@@ -303,9 +303,10 @@ a{
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
-  pad: 1px 1px 1px 0.5em;
+  padding: 1px 1px 1px 0.5em;
 }
-.btn-login{
+.login-button{
+  background-color: #db5629;
   float:right;
   position: absolute;
   top: 0px;
@@ -314,7 +315,6 @@ a{
   height: 52px;
   border-radius: 3px;
   border: 0;
-  padding: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 1.3rem;
@@ -342,6 +342,112 @@ a{
   font-family: 'fontello';
   display: inline-block;
   margin-right: .2em;
+}
+
+/* Group1 혼자 */
+/* .login{
+  background-color: #db5629;
+  background-image: radial-gradient(circle at right top,#ef962f, #db5629 );
+  border-radius: 5px;
+  box-shadow:5px 5px 0 0;
+  padding: 10px;
+}
+.login-heading{
+  font-size:1.5rem;
+  font-weight: 700;
+  color: #ff0;
+  margin: 0;
+  padding-left: 10px;
+}
+.login-form{
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+}
+.login fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+}
+.login-form div {
+  width: 150px;
+  margin-bottom: 5px;
+}
+.login-form label{
+  width: 55px;
+  display: inline-block;
+}
+.login-form input{
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 0.5em;
+}
+.login-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 52px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: #db5629;
+  color: #fff;
+}
+.member-only{
+  list-style: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius:0 0 5px 5px;
+  margin: 0;
+}
+.member-only li:first-child{
+  float: left;
+}
+.member-only li:last-child{
+  float: right;
+}
+.member-only li a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.member-only li a::before{
+  content: '\e803';
+  font-family: 'fontello';
+  display: inline-block;
+  margin-right: .2em;
+} */
+
+/* 유효성 검사 배너 링크 */
+.validation-list{
+  background-color: yellow;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+}
+.validation-list li a{  
+  display: block;
+  margin-top:10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: #eee;
+  padding: 8px 10px 8px 45px;
+  /* line-heisght: 30px; */
+  background-image: url(/css/images/validation_icon.png),
+  linear-gradient(180deg, #ccc, #eee);
+  background-repeat:no-repeat, repeat;
+  background-position: 15px 50%, 0 0;
+}
+.validation-list li a:hover{
+  color: #f00;
 }
 /* 슬로건 */
 .slogan{
