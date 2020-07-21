@@ -39,19 +39,19 @@ a{
 
 /* 레이아웃 */
 .container{
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: center; */
 }
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 /* 헤더 */
 .header{
   background-color: #fff;
   border-radius: 0 0 15px 15px;
-  padding: 0 30px 0 30px;
+  padding: 1px 30px;
   position: relative;
 }
 /* 로고 */
@@ -239,26 +239,23 @@ a{
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
+  background-color: #fff;
   min-height: 450px;
   display:flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   padding:30px;
   align-items: flex-start;
+  border-radius: 15px 15px 0 0;
 }
 
 .group1{
   width: 250px;
-  /* background-color: pink; */
-  /* border-radius: 5px; */
 }
 .group2{
-  background-color: lime;
   width: 380px;
 }
 .group3{
-  background-color: coral;
   width: 190px;
 }
 /* 로그인 */
@@ -426,7 +423,6 @@ a{
 
 /* 유효성 검사 배너 링크 */
 .validation-list{
-  background-color: yellow;
   margin-top: 25px;
   margin-bottom: 0;
   padding-left: 0;
@@ -449,6 +445,107 @@ a{
 .validation-list li a:hover{
   color: #f00;
 }
+
+/* 웹 관련 용어 */
+.term{
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border:1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.term-heading{
+  /* background-color: yellow; */
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin:0;
+}
+.term-list > div{
+  margin-top: 10px;
+  /* background-color: yellow; */
+}
+.term-list > div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.term-list-subject{
+  color: #296897;
+}
+.term-list-subject,
+.term-list-brief{
+  /* background-color: lime; */
+  width: 145px;
+  float: right;
+}
+.term-list-thumbnail{
+  /* background-color: orange; */
+  margin-left: 0;
+  float: left;
+}
+.term-list-brief{
+  /* background-color: skyblue; */
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+
+
+
+
+.even .term-list-subject,
+.even .term-list-brief{
+  /* background-color: lime; */
+  width: 145px;
+  float: left;
+}
+.even .term-list-thumbnail{
+  /* background-color: orange; */
+  margin-left: 0;
+  float: right;
+}
+
+
+
+
+
+
+
+/* 내가한 section term */
+/* .term{
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background:linear-gradient(180deg, #ccc, #eee);
+  margin-top: 20px;
+  padding: 10px;
+}
+.term-heading{
+  margin: 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  margin: 0;
+}
+.odd{
+  position: relative;
+  padding-left: 100px;
+}
+.term-list-thumbnail{
+  position: absolute;
+  bottom:10px;
+  left: 15px;
+  margin: 0;
+}
+.term-list-brief{
+  margin:5px 0;
+} */
+
+
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
