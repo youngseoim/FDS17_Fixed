@@ -597,6 +597,40 @@ btn-search{
   height: 24px;
   padding: 0 10px;
 }
+
+
+
+
+.board{
+  background-color: yellow;
+  position: relative;
+}
+.notice{
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pds {
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.board h2 {
+  margin: 0;
+}
+/* #pdsHeading{
+  position: absolute;
+  top: 0;
+  left: 50px;
+} */
+.notice-more,
+.pds-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
