@@ -174,7 +174,19 @@
           </dl>
         </section>
       </div>
-      <div class="group group2">group2</div>
+      <div class="group group2">
+        <h2 class="a11y-hidden">검색</h2>
+        <form action="#" method="POST" class="search-form">
+          <fieldset>
+            <legend>자료 검색 폼</legend>
+            <div role="group">
+              <label for="user-search">자료검색</label>
+            <input type="search" name="user-search" id="user-search" placeholder="검색어를 입력하세요." required >
+            <button class="btn-search" type="submit">검색</button>
+          </div>
+          </fieldset>
+        </form>
+      </div>
       <div class="group group3">group3</div>
     </main>
 
