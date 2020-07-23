@@ -136,8 +136,10 @@ a{
   padding: 0;
   list-style: none;
   white-space: nowrap;
-  /* display: none; */
-  /* background-color: yellow; */
+  display: none;
+}
+.menu-act .sub-menu{
+  display: block;
 }
 .sub-menu li,
 .sub-menu a{
@@ -170,24 +172,7 @@ a{
 .sub-menu6{
   right: 0;
 }
-.sub-menu1{
-  display: block;
-}
-.sub-menu2{
-  display: none;
-}
-.sub-menu3{
-  display: none;
-}
-.sub-menu4{
-  display: none;
-}
-.sub-menu5{
-  display: none;
-}
-.sub-menu6{
-  display: none;
-}
+
 /* 비쥬얼 */
 @keyframes textAni{
   0%{
@@ -562,7 +547,6 @@ a{
   border: 0;
   margin: 0;
   padding: 0;
-  background-color: yellow;
 }
 .search-form div[role="group"] {
   display: flex;
@@ -718,18 +702,25 @@ btn-search{
 
 /* 공지 사항 및 자료실 */
 .board{
-  background-color: yellow;
   margin-top: 20px;
   position: relative;
-  min-height: 180px;
+  padding-top: 45px;
+
 }
 .notice-heading,
 .pds-heading{
   background-color: pink;
-  float: left;
+  position: absolute;
+  top: 0;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
+}
+.notice-heading{
+  left: 0;
+}
+.pds-heading{
+  left: 73px;
 }
 
 .tab{
@@ -760,19 +751,14 @@ btn-search{
 }
 .notice-list,
 .pds-list{
-  background-color: silver;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
+  min-height: 130px;
 }
 
 .notice-list li,
 .pds-list li{
-  background-color: orange;
   margin-bottom: 10px;
 }
 .notice-list li::after,
@@ -783,7 +769,6 @@ btn-search{
 }
 .notice-list a,
 .pds-list a{
-  background-color: skyblue;
   float: left;
   width: 300px;
   text-overflow: ellipsis;
@@ -801,7 +786,6 @@ btn-search{
 }
 .notice-list time,
 .pds-list time{
-  background-color: violet;
   float: right;
 }
 .notice-more,
@@ -815,6 +799,53 @@ btn-search{
 .icon-plus::before{
   color: hsla(110, 70%, 50%, 1);
 }
+
+/* 내가짠 새소식 */
+/* .news{
+  position: relative;
+}
+.news-head{
+  color: #db5629;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #aaa;
+  width: 300px;
+  padding: 10px 10px 10px 0;
+  margin: 0;
+}
+.news-aria{
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 130px;
+}
+.news-aria h3{
+  margin-bottom: 5px;
+}
+.news-aria time{
+  display: block;
+  margin-bottom: 10px;
+}
+.news-aria p{
+  margin: 0;
+}
+.news-img{
+  position: absolute; 
+  top: 30px;
+  left: -25px;
+}
+.news-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+} */
+
+
+
+
+
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
