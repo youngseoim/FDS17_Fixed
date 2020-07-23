@@ -599,37 +599,221 @@ btn-search{
 }
 
 
+/* board */
 
-
-.board{
+/* .board{
   background-color: yellow;
   position: relative;
+  width: 100%;
 }
-.notice{
+.notice-list,
+.pds-list{
   background-color: blue;
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+} 
+.pds-list{
+  display: none;
 }
-.pds {
-  background-color: green;
-  position: absolute;
-  top: 0;
-  left: 0;
+.board li a{
+  display:inline-block;
+  width:calc(100% - 75px);
+}
+.board li time{
+  display: inline-block;
+  width:0;
 }
 .board h2 {
   margin: 0;
 }
-/* #pdsHeading{
-  position: absolute;
-  top: 0;
-  left: 50px;
-} */
+.notice-heading,
+.pds-heading{
+  float: left;
+}
 .notice-more,
 .pds-more{
   position: absolute;
   top: 0;
   right: 0;
+} */
+
+/* 내가 짠 공지 사항 및 자료실 */
+/* .board {
+  position: relative;
+  background-color: yellow;
+}
+
+.notice-list,
+.pds-list{
+  padding-top:45px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.notice-list li,
+.pds-list li{
+  margin-bottom: 10px;
+}
+.notice-list a::before,
+.pds-list a::before{
+  content: '\f192';
+  font-family: 'fontello';
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
+}
+.notice-list li a,
+.pds-list li a{
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 300px;
+  vertical-align: top;
+}
+.notice-list li time,
+.pds-list li time{
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+.notice-list{
+  display: none;
+}
+.pds-list{
+  display: none;
+}
+.tab{
+  position: absolute;
+  top:0;
+  left:0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  background:#ccc linear-gradient(180deg, #ccc, #eee);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 5px;
+  color: #666;
+}
+
+.pds .tab{
+  left: 68px;
+}
+.notice-more,
+.pds-more{
+  position:absolute;
+  top: -8px;
+  right: -10px;
+  padding: 15px;
+}
+.board
+.icon-plus::before{
+  color:hsla(110,50%,30%,1);
+} */
+
+/* 공지 사항 및 자료실 */
+.board{
+  background-color: yellow;
+  margin-top: 20px;
+  position: relative;
+  min-height: 180px;
+}
+.notice-heading,
+.pds-heading{
+  background-color: pink;
+  float: left;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.tab{
+  display: block;
+  color: #666;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  padding: 5px 10px;
+}
+.tab-act .tab{
+  color: #db5629;
+  border-color: #db5629 #db5629 #fff #db5629 ;
+  background: #fff;
+}
+
+.notice-list, 
+.pds-list, 
+.notice-more, 
+.pds-more{
+  display: none;
+}
+.tab-act .notice-list, 
+.tab-act .pds-list, 
+.tab-act .notice-more, 
+.tab-act .pds-more{
+  display: block;
+}
+.notice-list,
+.pds-list{
+  background-color: silver;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+}
+
+.notice-list li,
+.pds-list li{
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.notice-list li::after,
+.pds-list li::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.notice-list a,
+.pds-list a{
+  background-color: skyblue;
+  float: left;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.notice-list a::before,
+.pds-list a::before{
+  content: '\f192';
+  font-family: "fontello";
+  display: inline-block;
+  margin-right: .2em;
+
+}
+.notice-list time,
+.pds-list time{
+  background-color: violet;
+  float: right;
+}
+.notice-more,
+.pds-more{
+  /* background-color: lime; */
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding:  8px;
+}
+.icon-plus::before{
+  color: hsla(110, 70%, 50%, 1);
 }
 /* 슬로건 */
 .slogan{
