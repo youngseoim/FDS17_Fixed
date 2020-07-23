@@ -800,7 +800,7 @@ btn-search{
   color: hsla(110, 70%, 50%, 1);
 }
 
-/* 내가짠 새소식 */
+/* 내가짠 새소식 position 사용 */
 /* .news{
   position: relative;
 }
@@ -842,10 +842,112 @@ btn-search{
 } */
 
 
+/* 내가짠 새소식 float */
+/* .news{
+  position: relative;
+}
+.news-heading{
+  color: #db5629;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #aaa;
 
 
+}
+.news-item-subject{
+  margin: 0;
+  float: right;
+  width: 250px;
+  margin-bottom: 5px;
+}
+.news-item-date{
+  float: right;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.news-item-brief{
+  margin:0;
+  float: right;
+  width: 250px;
 
+}
+.news-item-thumnail{
+  margin: 0;
+}
+.news-item-thumnail img{
+  box-shadow: 0 15px 15px 0 #ccc;
+}
+.news-item-thumnail figcaption{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 4;
+  text-indent: 20px;
+  text-align: start;
+}
+.news-more{
+  position: absolute;
+  top: 20px;
+  right: -8px;
+  padding: 8px;
+} */
 
+/* 강사님이 작성하신 새소식 position 사용 */
+.news{
+  margin-top: 20px;
+  position: relative;
+}
+.news::before{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background:#aaa linear-gradient(90deg,#aaa, #fff);
+}
+.news-heading{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #db5629;
+}
+.news-item{
+  /* background-color: yellow; */
+  margin-top: 30px;
+  padding-left: 130px;
+  position: relative;
+}
+.news-item-subject{
+  margin: 0;
+  font-size: 1.4rem;
+}
+.news-item-brief{
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.news-item-thumnail{
+  /* background-color: pink; */
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  text-align: center;
+}
+.news-item-thumnail img{
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px 0px #ccc;
+}
+.news-more{
+  position: absolute;
+  padding: 8px;
+  top: -8px;
+  right: -8px;
+  background-color: skyblue;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
