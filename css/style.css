@@ -30,6 +30,8 @@ body{
   overflow: hidden;
   margin: -1px;
   clip-path:polygon(0 0, 0 0, 0 0);
+  clip-path: rect(0 0 0 0);
+  clip-path: rect(0, 0, 0, 0);
 }
 /* 링크 스타일 */
 a{
