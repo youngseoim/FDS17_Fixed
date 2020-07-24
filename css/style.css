@@ -965,6 +965,15 @@ btn-search{
   border: 1px solid #aaa;
   border-radius: 5px;
 }
+.event-heading, 
+.related-heading{
+  font-size: 1.6rem;
+  margin: 0;
+}
+.event-heading span,
+.related-heading span{
+  color: #db5629;
+}
 /* 
 .event{
   position: relative;
@@ -1014,35 +1023,11 @@ btn-search{
 
 /* 강사님이 짠 신규 이벤트 및 관련사이트 */
 /* 신규이벤트 */
-/* .btn-wrap{
-  background-color: yellow;
-  height: 18px;
-}
-.btn-prev, .btn-next{
-  background: #ccc url(./images/back_forward.png) no-repeat;
-  border: 0;
-  height: 100%;
-  width: 19px;
-  overflow: hidden;
-  padding: 18px 0 0 0;
-  cursor: pointer;
-}
-.btn-next{
-  background-position:-35px 0;
-} */
 .event{
   border-bottom: 1px solid #aaa;
   position: relative;
 }
-.event-heading, 
-.related-heading{
-  font-size: 1.6rem;
-  margin: 0;
-}
-.event-heading span,
-.related-heading span{
-  color: #db5629;
-}
+
 .event-thumbnail, .event-brief{
   margin: 10px 0;
 }
@@ -1074,8 +1059,60 @@ btn-search{
 .btn-next{
   background-position: -36px 0;
 }
+/* 관련사이트 */
+/* 내가 짠 */
+/* .related{
+  margin-top: 10px;
+}
+.related-list{
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  text-align: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.related-list li{
+  height: 25px;
+  margin-top: 5px;
+}
+.related-list:hover{
+  height: 147px;
+} */
 
 
+.related{
+  margin-top: 10px;
+}
+.related-list{
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  height: 27px;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  transition: all 200ms;
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px;
+}
+.related-list li{
+  padding: 2px;
+}
+.related-list a{
+  line-height: 21px;
+  display: block;
+  text-indent: 1em;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
