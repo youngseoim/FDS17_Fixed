@@ -804,39 +804,47 @@ btn-search{
 /* .news{
   position: relative;
 }
-.news-head{
+.news-heading{
   color: #db5629;
   font-size: 1.5rem;
   font-weight: 700;
   border-bottom: 1px solid #aaa;
   width: 300px;
-  padding: 10px 10px 10px 0;
+  padding: 40px 10px 10px 0;
   margin: 0;
+
 }
-.news-aria{
-  display: block;
+.news-item{
   width: 100%;
   margin-top: 25px;
-  margin-left: 130px;
 }
-.news-aria h3{
-  margin-bottom: 5px;
-}
-.news-aria time{
-  display: block;
-  margin-bottom: 10px;
-}
-.news-aria p{
+.news-item .news-item-subject{
   margin: 0;
+  margin-bottom: 5px;
+  margin-left: 140px;
 }
-.news-img{
+.news-item .news-item-date{
+  margin-bottom: 10px;
+  margin-left: 140px;
+}
+.news-item .news-item-brief{
+  margin: 0;
+  margin-left: 137px;
+}
+.news-item-thumnail{
   position: absolute; 
-  top: 30px;
-  left: -25px;
+  top: 95px;
+  left: 0px;
+  margin: 0;
+  text-align: center;
+}
+.news-item-thumnail img{
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px 0px #ccc;
 }
 .news-more{
   position: absolute;
-  top: -8px;
+  top: 30px;
   right: -8px;
   padding: 8px;
 } */
@@ -916,7 +924,6 @@ btn-search{
   color: #db5629;
 }
 .news-item{
-  /* background-color: yellow; */
   margin-top: 30px;
   padding-left: 130px;
   position: relative;
@@ -930,7 +937,6 @@ btn-search{
   line-height: 1.5;
 }
 .news-item-thumnail{
-  /* background-color: pink; */
   margin: 0;
   position: absolute;
   top: 3px;
@@ -948,6 +954,126 @@ btn-search{
   right: -8px;
   background-color: skyblue;
 }
+
+/* group3 */
+/* 내가 짠 신규 이벤트 및 관련사이트 */
+.gradient-box{
+  background:#ccc linear-gradient(180deg, #ccc, #eee);
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+/* 
+.event{
+  position: relative;
+}
+.event-heading{
+  margin: 0;
+}
+.event-thumbnail{
+  margin:0;
+}
+.event-thumbnail img{
+  display: block;
+  margin: 3px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 0 15px 15px 0px #ccc;
+}
+.btn-wrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev{
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+
+  border: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  text-indent: 55px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.btn-next{
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  border: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  text-indent: 55px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position:-36px;
+} */
+
+/* 강사님이 짠 신규 이벤트 및 관련사이트 */
+/* 신규이벤트 */
+/* .btn-wrap{
+  background-color: yellow;
+  height: 18px;
+}
+.btn-prev, .btn-next{
+  background: #ccc url(./images/back_forward.png) no-repeat;
+  border: 0;
+  height: 100%;
+  width: 19px;
+  overflow: hidden;
+  padding: 18px 0 0 0;
+  cursor: pointer;
+}
+.btn-next{
+  background-position:-35px 0;
+} */
+.event{
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event-heading, 
+.related-heading{
+  font-size: 1.6rem;
+  margin: 0;
+}
+.event-heading span,
+.related-heading span{
+  color: #db5629;
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-brief em{
+  font-style: normal;
+}
+.btn-wrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev,
+.btn-next{
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+
+}
+.btn-next{
+  background-position: -36px 0;
+}
+
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
