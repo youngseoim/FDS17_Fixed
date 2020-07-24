@@ -387,7 +387,6 @@ a{
   float: left;
 }
 .term-list-brief{
-  /* background-color: skyblue; */
   margin-left: 0;
   margin-top: 5px;
 }
@@ -464,9 +463,7 @@ a{
  font-size: 1.6rem;
  font-weight: 700;
 }
-.term-list > div{
-  background-color: skyblue;
-}
+
 .term-list-subject,
 .term-list-brief{
   background-color: blue;
@@ -954,7 +951,6 @@ btn-search{
   padding: 8px;
   top: -8px;
   right: -8px;
-  background-color: skyblue;
 }
 
 /* group3 */
@@ -966,12 +962,14 @@ btn-search{
   border-radius: 5px;
 }
 .event-heading, 
-.related-heading{
+.related-heading,
+.favorite-heading{
   font-size: 1.6rem;
   margin: 0;
 }
 .event-heading span,
-.related-heading span{
+.related-heading span,
+.favorite-heading span{
   color: #db5629;
 }
 /* 
@@ -1112,6 +1110,67 @@ btn-search{
   line-height: 21px;
   display: block;
   text-indent: 1em;
+}
+/* 인기 사이트 */
+.group3 .gradient-box:nth-child(2){
+  margin-top: 20px;
+}
+.favorite{
+  position: relative;
+}
+.favorite-list{
+  margin: 10px 0 0 0 ;
+  padding-left: 0;
+  list-style: none;
+}
+/* .favorite-list li{
+  counter-increment: number;
+  margin-top: 5px;
+  position: relative;
+} */
+.favorite-list li{
+  counter-increment: number;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-top: 5px;
+}
+.favorite-list li::before{
+  content: counter(number);
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 2px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+.favorite-list a{
+  flex-grow: 1;
+}
+.up, .down, .stop{
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  overflow: hidden;
+  padding-top: 11px;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+}
+.stop{
+  background-position: 0 50% ;
+}
+.down{
+  background-position: 0 100% ;
+}
+.up{
+  /* 명시적 용도  */
+  background-position: 0 0 ;
+}
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 /* 슬로건 */
 .slogan{
