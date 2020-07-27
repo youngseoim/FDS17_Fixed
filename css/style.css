@@ -1243,12 +1243,103 @@ btn-search{
 } */
 
 .footer-bg{
-  background-color: purple;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+/* 강사님 */
 .footer{
-  background-color: skyblue;
+  padding-left:170px;
+  padding-right: 110px;
+  position: relative;
+}
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+/* 가이드 링크 */
+.guide-list{
+  list-style: none;
+  margin: 0;
+  padding: 4px 20px;
+  background-color: #7b8385;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 5px;
+  justify-content:space-between;
+}
+.guide-list a{
+  display: block;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+/* 주소 및 연락처 */
+.address{
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.address span{
+  margin-right: 10px;
+}
+/* 저작권 */
+.corpyright{
+  display: block;
+  font-size: 1.4rem;
+}
+/* 적용 기술 배지 */
+.badge{
+  position: absolute;
+  top:0 ;
+  right: 0 ;
+}
+/* 내가짠 flex */
+/* .footer{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin-left: 415px;
+
 } 
+.footer-logo{
+  position: absolute;
+  top: 30px;
+  left: -120px;
+}
+.guide-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background: #7b8385;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 680px;
+  height: 40px;
+  border: 1px solid #7b8385;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0;
+}
+.address{
+  font-style: normal;
+  line-height: 1.5;
+}
+.copyright{
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+.badge{
+  position: absolute;
+  top: 10px;
+  right: 170px;
+} */
