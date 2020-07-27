@@ -919,7 +919,7 @@ btn-search{
 .news-heading{
   margin: 0;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 700; 
   color: #db5629;
 }
 .news-item{
@@ -954,7 +954,6 @@ btn-search{
 }
 
 /* group3 */
-/* 내가 짠 신규 이벤트 및 관련사이트 */
 .gradient-box{
   background:#ccc linear-gradient(180deg, #ccc, #eee);
   padding: 10px;
@@ -972,8 +971,10 @@ btn-search{
 .favorite-heading span{
   color: #db5629;
 }
-/* 
-.event{
+
+/* 내가 짠 신규 이벤트 및 관련사이트 */
+
+/* .event{
   position: relative;
 }
 .event-heading{
@@ -1057,6 +1058,8 @@ btn-search{
 .btn-next{
   background-position: -36px 0;
 }
+
+
 /* 관련사이트 */
 /* 내가 짠 */
 /* .related{
@@ -1173,9 +1176,74 @@ btn-search{
   padding: 8px;
 }
 /* 슬로건 */
+/* 강사님 */
 .slogan{
-  background-color: orange;
+  position: relative;
+  padding: 15px 80px 15px 170px;
 }
+.slogan-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: pink; */
+  margin: 0;
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 400;
+  left: 35px;
+  bottom: -25px;
+}
+.slogan-heading::after{
+  content: "";
+  background-image: url(./images/coffee.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slogan-brief{
+  color: #a09784;
+}
+.slogan-brief q{
+  font-weight: 700;
+}
+.slogan-brief q::before{
+  font-size: 3rem;
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+  /* vertical-align: top; */
+}
+.slogan-brief q::after{
+  content:"";
+}
+/* .slogan{
+  background-color: orange;
+  color: #a09784;
+
+  position: relative;
+  width: 660px;
+}
+.slogan-heading{
+  background-image: url(./images/coffee.png);
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -20px;
+  margin-left: -135px;
+  text-indent: -9999px;
+}
+.slogan-brief{
+  display: block;
+  line-height: 1.5;
+} */
+
 .footer-bg{
   background-color: purple;
   width: 100%;
@@ -1185,4 +1253,4 @@ btn-search{
 }
 .footer{
   background-color: skyblue;
-}
+} 
