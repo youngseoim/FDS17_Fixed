@@ -1212,10 +1212,8 @@ btn-search{
 }
 .slogan-brief q::before{
   font-size: 3rem;
-  position: relative;
-  top: 10px;
+  vertical-align: middle;
   margin-right: 5px;
-  /* vertical-align: top; */
 }
 .slogan-brief q::after{
   content:"";
